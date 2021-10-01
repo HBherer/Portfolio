@@ -5,8 +5,9 @@ import { toggleTheme } from "../../assets/theme/action/themeAction"
 import { getTheme } from "../../assets/theme/selector/themeSelector"
 
 export enum SupportedThemes {
-    DARK,
-    LIGHT
+    DARK = "DARK",
+    LIGHT = "LIGHT"
+    
 }
 
 interface Props {
@@ -27,15 +28,13 @@ const ThemeSelect = (props: Props) => {
     }
 
     return (
-        <div>
-            <form>
-                <label htmlFor="themeSelect">Thème</label>
-                <select id="themeSelect" name="themeSelect" value={theme} onChange={handleChange}>
-                    <option value={SupportedThemes.DARK}>Sombre</option>
-                    <option value={SupportedThemes.LIGHT}>Claire</option>
-                </select>
-            </form>
-        </div>
+        <form>
+            <label htmlFor="themeSelect">Thème</label>
+            <select id="themeSelect" name="themeSelect" value={theme} onChange={handleChange}>
+                <option value={SupportedThemes.DARK}>Sombre</option>
+                <option value={SupportedThemes.LIGHT}>Claire</option>
+            </select>
+        </form>
     )
 }
 

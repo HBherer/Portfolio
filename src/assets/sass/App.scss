@@ -1,0 +1,19 @@
+main{
+  display: flex;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.darkMain{
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+}
+.lightMain{
+  background-color: #F9F9F9;
+  color: #181818;
+  display: flex;
+  flex-wrap: wrap;
+}

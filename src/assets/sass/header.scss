@@ -1,0 +1,143 @@
+header{
+    top: 0px;
+    width: 13.12vh;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: sticky;
+    z-index: 1;
+}
+.darkHeader{
+    background-color: #181818;
+    color: #FFFFFF;
+}
+.lightHeader{
+    background-color: #DEDEDE;
+    color: #181818;
+}
+
+.containerIconRS{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+.iconRSDark{
+    width: 30%;
+    fill: #FFFFFF;
+    margin-top: 3.20vh;
+    &:hover{
+        fill: #606C38;
+    }
+}
+.iconRSLight{
+    width: 44px;
+    fill: #181818;
+    margin-top: 3.20vh;
+    &:hover{
+        fill: #606C38;
+    }
+}
+
+.containerAvatarSize{
+    text-align: center;
+    margin-top: 4.26vh;
+    width: 100%;
+}
+.avatarSize{
+    width: 50%;
+}
+.LinkDark{
+    color: #FFFFFF;
+    font-size: 1.7rem;
+    text-decoration: none;
+    margin: 30px 0px 2.5vh 50px;
+    padding-left: 4.8vh;
+    writing-mode: vertical-rl;
+    transform:scale(-1);
+    border-left: solid 6px transparent;
+    transition: color 0.3s;
+    outline: none;
+    &:hover,:active{
+        color: #606C38;
+        border-left: solid 6px #606C38;
+    }
+}
+
+.LinkLight{
+    color: #181818;
+    font-size: 1.7rem;
+    text-decoration: none;
+    margin: 30px 0px 2.5vh 50px;
+    padding-left: 4.8vh;
+    writing-mode: vertical-rl;
+    transform:scale(-1);
+    border-left: solid 6px transparent;
+    transition: color 0.3s;
+    outline: none;
+    &:hover,:active{
+        color: #606C38;
+        border-left: solid 6px #606C38;
+    }
+
+    border-left: solid 6px transparent;
+    &:hover{
+        color: #606C38;
+        border-left: solid 6px #606C38;
+    }
+}
+
+/* Media */
+
+@media screen and (max-width: 768px) {
+    .LinkDark{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (max-height: 860px) {
+    .LinkDark{
+        font-size: 1.3rem;
+        margin: 30px 10px 2.8vh 50px;
+        padding-left: 4.4vh;
+    }
+    .LinkLight{
+        font-size: 1.3rem;
+        margin: 30px 0px 2.8vh 50px;
+        padding-left: 4.4vh;
+    }
+}
+@media screen and (max-height: 740px) {
+    .avatarSize{
+        width: 40%;
+    }
+    .LinkDark{
+        font-size: 1.3rem;
+        margin: 30px 15px 2.8vh 50px;
+        padding-left: 4.4vh;
+    }
+    .LinkLight{
+        font-size: 1.3rem;
+        margin: 30px 0px 2.8vh 50px;
+        padding-left: 4.4vh;
+        font-weight: bold;
+    }
+}
+@media screen and (max-height: 690px) {
+    .avatarSize{
+        width: 40%;
+    }
+    .LinkDark{
+        font-size: 1.1rem;
+        margin: 30px 10px 0vh 35px;
+        padding-left: 3.2vh;
+    }
+    .LinkLight{
+        font-size: 1.1rem;
+        margin: 30px 6px 0vh 35px;
+        padding-left: 3.2vh;
+        font-weight: bold;
+    }
+}

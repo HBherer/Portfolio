@@ -1,23 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './assets/sass/App.css';
-import { Provider } from 'react-redux'
-import ThemeSelect from './contents/components/ThemeSelect';
+import './assets/sass/App.scss';
+import { Provider } from 'react-redux';
 import configureStore from './contents/reducers/configureStore';
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppNavigator from "../src/contents/router/AppNavigator";
+
 
 const store = configureStore();
 
 function App() {
   return (
     <Provider store={store}>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <ThemeSelect></ThemeSelect>
-        </header>
-      </div>
+      <Router>
+        <AppNavigator />
+      </Router>
     </Provider>
-
   );
 }
 
