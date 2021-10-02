@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../../logo.svg';
+
 import { connect } from "react-redux"
 import { getTheme } from "../../assets/theme/selector/themeSelector";
 import { SupportedThemes } from "../components/ThemeSelect";

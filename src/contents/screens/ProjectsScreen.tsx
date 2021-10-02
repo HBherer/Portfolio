@@ -1,8 +1,11 @@
 import React from "react";
-import logo from '../../logo.svg';
 import { connect } from "react-redux"
 import { getTheme } from "../../assets/theme/selector/themeSelector";
 import { SupportedThemes } from "../components/ThemeSelect";
+import "../../assets/sass/App.scss"
+import Header from "../components/Header";
+import FooterLegal from '../components/FooterLegal';
+
 
 interface Props {
     theme: SupportedThemes
@@ -11,20 +14,21 @@ interface Props {
 const ProjectsScreen = (props: Props) => {
     const getColor = () => {
         if (props.theme === SupportedThemes.DARK) {
-            return "#1E1E1E"
+            return "darkMain"
         }
         else {
-            return "#DBDBDB"
+            return "lightMain"
         }
     }
 
     return (
-        <>
-            <main className="App-header" style={{ backgroundColor: getColor() }}>
-                <p>Project</p>
-                <img src={logo} className="App-logo" alt="logo" />
+        <div className={getColor()}>
+            <Header />
+            <main >
+                
             </main>
-        </>
+            <FooterLegal />
+        </div>
 
     )
 }

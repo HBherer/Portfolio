@@ -29,7 +29,7 @@ const ThemeSelect = (props: Props) => {
 
     return (
         <form>
-            <label htmlFor="themeSelect">Thème</label>
+            <label className="themeSelectLebel" htmlFor="themeSelect">Thème</label>
             <select id="themeSelect" name="themeSelect" value={theme} onChange={handleChange}>
                 <option value={SupportedThemes.DARK}>Sombre</option>
                 <option value={SupportedThemes.LIGHT}>Claire</option>

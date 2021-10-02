@@ -1,0 +1,341 @@
+.wrapperAnim {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    display: flex;
+  }
+  
+  @mixin animTextDark {
+    color: #232323;
+    margin: 0px;
+    position: absolute;
+    white-space: nowrap;
+  }
+  
+  @mixin animTextLight {
+    color: #eeeeee;
+    margin: 0px;
+    position: absolute;
+    white-space: nowrap;
+  }
+  
+  .animText1Dark {
+    @include animTextDark;
+    top: 16vh;
+    left: -35vh;
+    font-size: 18.75rem;
+    animation: scrollTextToRight 25s linear infinite;
+  }
+  
+  .animText2Dark {
+    @include animTextDark;
+    top: 16vh;
+    left: -330vh;
+    font-size: 18.75rem;
+    animation: scrollTextToRight 25s linear infinite;
+  }
+  
+  .animText3Dark {
+    @include animTextDark;
+    top: 67vh;
+    right: -35vh;
+    font-size: 18.75rem;
+    animation: scrollTextToLeft 25s linear infinite;
+  }
+  
+  .animText4Dark {
+    @include animTextDark;
+    top: 67vh;
+    right: -330vh;
+    font-size: 18.75rem;
+    animation: scrollTextToLeft 25s linear infinite;
+  }
+  
+  
+  .animText1Light {
+    @include animTextLight;
+    top: 16vh;
+    left: -35vh;
+    font-size: 18.75rem;
+    animation: scrollTextToRight 25s linear infinite;
+  }
+  
+  .animText2Light {
+    @include animTextLight;
+    top: 16vh;
+    left: -330vh;
+    font-size: 18.75rem;
+    animation: scrollTextToRight 25s linear infinite;
+  }
+  
+  .animText3Light {
+    @include animTextLight;
+    top: 67vh;
+    right: -35vh;
+    font-size: 18.75rem;
+    animation: scrollTextToLeft 25s linear infinite;
+  }
+  
+  .animText4Light {
+    @include animTextLight;
+    top: 67vh;
+    right: -330vh;
+    font-size: 18.75rem;
+    animation: scrollTextToLeft 25s linear infinite;
+  }
+  
+  
+  @keyframes scrollTextToRight {
+    0% {
+      transform: translate(0, 0);
+    }
+  
+    100% {
+      transform: translate(100%, 0);
+    }
+  }
+  
+  @keyframes scrollTextToLeft {
+    0% {
+      transform: translate(-100, 0);
+    }
+  
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  
+  div.clickEffectDark {
+    position: fixed;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 50%;
+    animation: clickEffect 0.4s ease-out;
+    z-index: 99999;
+  }
+  
+  div.clickEffectLight {
+    position: fixed;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #181818;
+    border-radius: 50%;
+    animation: clickEffect 0.4s ease-out;
+    z-index: 99999;
+  }
+  
+  @keyframes clickEffect {
+    0% {
+      opacity: 1;
+      width: 0.5em;
+      height: 0.5em;
+      margin: -0.25em;
+      border-width: 0.5em;
+    }
+  
+    100% {
+      opacity: 0.2;
+      width: 15em;
+      height: 15em;
+      margin: -7.5em;
+      border-width: 0.03em;
+    }
+  }
+  
+  /* Media */
+  
+  @media screen and (max-width: 570px) {
+    .wrapperAnim{
+        display: none;
+    }
+  }
+
+  @media screen and (max-height: 980px) {
+    .animText2Dark {
+      top: 16vh;
+      left: -370vh;
+    }
+    .animText4Dark {
+      top: 67vh;
+      right: -370vh;
+    }
+  
+    .animText2Light {
+      top: 16vh;
+      left: -370vh;
+    }
+    .animText4Light {
+      top: 67vh;
+      right: -370vh;
+    }
+  }
+  
+  @media screen and (max-height: 910px) {
+    .animText2Dark {
+      top: 16vh;
+      left: -380vh;
+    }
+    .animText4Dark {
+      top: 67vh;
+      right: -380vh;
+    }
+  
+    .animText2Light {
+      top: 16vh;
+      left: -380vh;
+    }
+    .animText4Light {
+      top: 67vh;
+      right: -380vh;
+    }
+  }
+  
+  @media screen and (max-height: 880px) {
+    .animText2Dark {
+      top: 16vh;
+      left: -410vh;
+    }
+    .animText4Dark {
+      top: 67vh;
+      right: -410vh;
+    }
+  
+    .animText2Light {
+      top: 16vh;
+      left: -410vh;
+    }
+    .animText4Light {
+      top: 67vh;
+      right: -410vh;
+    }
+  }
+  
+  @media screen and (max-height: 800px) {
+    .animText2Dark {
+      top: 16vh;
+      left: -450vh;
+    }
+    .animText4Dark {
+      top: 67vh;
+      right: -450vh;
+    }
+  
+    .animText2Light {
+      top: 16vh;
+      left: -450vh;
+    }
+    .animText4Light {
+      top: 67vh;
+      right: -450vh;
+    }
+  }
+  
+  @media screen and (max-height: 730px) {
+    .animText1Dark {
+      font-size: 14rem;
+    }
+    .animText2Dark {
+      left: -390vh;
+      font-size: 14rem;
+    }
+    .animText3Dark {
+      font-size: 14rem;
+    }
+    .animText4Dark {
+      font-size: 14rem;
+      right: -390vh;
+    }
+  
+    .animText1Light {
+      left: -35vh;
+      font-size: 14rem;
+    }
+    .animText2Light {
+      top: 16vh;
+      left: -390vh;
+      font-size: 14rem;
+    }
+    .animText3Light {
+      right: -35vh;
+      font-size: 14rem;
+    }
+    .animText4Light {
+      top: 67vh;
+      right: -390vh;
+      font-size: 14rem;
+    }
+  }
+  
+  @media screen and (max-height: 660px) {
+    .animText1Dark {
+      font-size: 13rem;
+    }
+    .animText2Dark {
+      left: -410vh;
+      font-size: 13rem;
+    }
+    .animText3Dark {
+      font-size: 13rem;
+    }
+    .animText4Dark {
+      font-size: 13rem;
+      right: -410vh;
+    }
+  
+    .animText1Light {
+      left: -35vh;
+      font-size: 13rem;
+    }
+    .animText2Light {
+      top: 16vh;
+      left: -410vh;
+      font-size: 13rem;
+    }
+    .animText3Light {
+      right: -35vh;
+      font-size: 13rem;
+    }
+    .animText4Light {
+      top: 67vh;
+      right: -410vh;
+      font-size: 13rem;
+    }
+  }
+  
+  @media screen and (max-height: 607px) {
+    .animText1Dark {
+      font-size: 10rem;
+    }
+    .animText2Dark {
+      left: -330vh;
+      font-size: 10rem;
+    }
+    .animText3Dark {
+      font-size: 10rem;
+    }
+    .animText4Dark {
+      top: 67vh;
+      right: -330vh;
+      font-size: 10rem;
+    }
+  
+    .animText1Light {
+      left: -35vh;
+      font-size: 10rem;
+    }
+    .animText2Light {
+      left: -330vh;
+      font-size: 10rem;
+    }
+    .animText3Light {
+      right: -35vh;
+      font-size: 10rem;
+    }
+    .animText4Light {
+      right: -330vh;
+      font-size: 10rem;
+    }
+  }

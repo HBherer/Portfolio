@@ -1,19 +1,442 @@
-main{
+.main {
   display: flex;
-  height: auto;
   position: relative;
   z-index: 0;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 
-.darkMain{
+.darkMain {
   background-color: #1E1E1E;
   color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
-.lightMain{
+
+.lightMain {
   background-color: #F9F9F9;
   color: #181818;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+/* About */
+
+.containerAbout {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-around;
+}
+
+.title {
+  font-family: chandler-42-regular, sans-serif;
+  font-size: 2.5rem;
+  height: auto;
+  width: 75vh;
+  align-self: center;
+  margin-left: 10vh;
+}
+
+.containerAboutRight {
+  display: block;
+  text-align: center;
+  width: 74vh;
+  height: auto;
+  align-self: center;
+  margin-left: 15vh;
+}
+
+.firstLine {
+  font-size: 118px;
+  font-weight: bold;
+  margin-bottom: 28px;
+}
+
+.firstLine>span {
+  color: #606C38;
+}
+
+.secondLine {
+  margin-top: 0px;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10vh;
+}
+
+.btnContact {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  background-color: #606C38;
+  padding: 15px 22px;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: #767e5d;
+  }
+
+}
+
+.containerFastInfo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 13.12vh;
+}
+
+.navInfoPosition {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  margin-left: 20vh;
+  margin-bottom: 8%;
+}
+
+.navInfoPosition2 {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  margin-left: 20vh;
+  margin-bottom: 8%;
+}
+
+.navInfoPosition2>div {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10%;
+}
+
+.navInfoPosition>div {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.InfoPosition {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.8rem;
+}
+
+.InfoTextDark {
+  fill: #FFFFFF;
+
+  &:hover {
+    fill: #606C38;
+  }
+}
+
+.InfoTextLight {
+  fill: #181818;
+
+  &:hover {
+    fill: #606C38;
+  }
+}
+
+.InfoPositionTechnoPref {
+  display: flex;
+  justify-content: center;
+  padding-right: 8%;
+  width: 100%
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1855px) {
+  .title{
+    width: 50vh;
+  }
+  containerAboutRight{
+    width: 55vh;
+  }
+}
+@media screen and (max-width: 1707px) {
+  .title{
+    width: 45vh;
+  }
+  containerAboutRight{
+    width: 40vh;
+  }
+}
+@media screen and (max-width: 1655px) {
+  .title{
+    width: 35vh;
+    font-size: 2rem;
+  }
+  containerAboutRight{
+    width: 32vh;
+  }
+  .firstLine {
+    font-size: 108px;
+    margin-bottom: 28px;
+  }
+  .secondLine {
+    margin-top: 0px;
+    font-size: 45px;
+    margin-bottom: 10vh;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .title{
+    width: 28vh;
+    font-size: 1.7rem;
+  }
+  containerAboutRight{
+    width: 20vh;
+  }
+  .firstLine {
+    font-size: 88px;
+    margin-bottom: 28px;
+  }
+  .secondLine {
+    margin-top: 0px;
+    font-size: 37px;
+    margin-bottom: 10vh;
+  }
+  .InfoPosition>svg{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1477px) {
+  .main{
+    justify-content: space-around;
+    width: 190vh;
+  }
+  .title{
+    width: 30vh;
+    font-size: 1.3rem;
+  }
+  containerAboutRight{
+    width: 19vh;
+  }
+  .firstLine {
+    font-size: 70px;
+    margin-bottom: 28px;
+  }
+  .secondLine {
+    margin-top: 0px;
+    font-size: 29px;
+    margin-bottom: 10vh;
+  }
+  .InfoPosition>svg{
+    width: 75%;
+  }
+  .InfoPositionTechnoPref>svg{
+    width: 75%;
+    margin-bottom: -50px;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .main{
+    justify-content: space-around;
+    width: 170vh;
+  }
+  .title{
+    width: 12vh;
+    font-size: 1.2rem;
+  }
+  containerAboutRight{
+    width: 5vh;
+  }
+  .firstLine {
+    font-size: 60px;
+    margin-bottom: 28px;
+  }
+  .secondLine {
+    margin-top: 0px;
+    font-size: 25px;
+    margin-bottom: 10vh;
+  }
+  .InfoPosition>svg{
+    width: 75%;
+  }
+  .InfoPositionTechnoPref>svg{
+    width: 75%;
+    margin-bottom: -50px;
+  }
+}
+@media screen and (max-width: 1144px) {
+  .main{
+    justify-content: space-around;
+    width: 175vh;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    overflow: hidden;
+  }
+  header{
+    position: absolute;
+  }
+  .title{
+    width: 30vh;
+    font-size: 1.2rem;
+  }
+  containerAboutRight{
+    width: 10vh;
+  }
+
+  .btnContact{
+    margin-bottom: 20px;
+  }
+  .firstLine {
+    font-size: 60px;
+    margin-bottom: 28px;
+  }
+  .secondLine {
+    font-size: 25px;
+    margin-bottom: 8vh;
+  }
+  .InfoPosition>svg{
+    width: 75%;
+  }
+  .InfoPositionTechnoPref>svg{
+    width: 75%;
+    margin-bottom: -50px;
+  }
+  .footerDark{
+    margin-left: 1vh;
+  }
+}
+@media screen and (max-width: 1044px) {
+  .main{
+    justify-content: space-around;
+    width: 155vh;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    overflow: hidden;
+  }
+  header{
+    position: absolute;
+  }
+  .title{
+    width: 30vh;
+    font-size: 1.2rem;
+  }
+  containerAboutRight{
+    width: 10vh;
+  }
+
+  .btnContact{
+    margin-bottom: 20px;
+  }
+  .firstLine {
+    font-size: 60px;
+    margin-bottom: 28px;
+  }
+  .secondLine {
+    font-size: 25px;
+    margin-bottom: 8vh;
+  }
+  .InfoPosition>svg{
+    width: 75%;
+  }
+  .InfoPositionTechnoPref>svg{
+    width: 75%;
+    margin-bottom: -50px;
+  }
+  .footerDark{
+    margin-left: 1vh;
+  }
+}
+@media screen and (max-width: 950px) {
+  .main{
+    justify-content: space-around;
+    width: 90vh;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: 15%;
+    overflow: hidden;
+  }
+  header{
+    position: absolute;
+  }
+  .title{
+    width: 50vh;
+    font-size: 1.2rem;
+  }
+  containerAboutRight{
+    width: 10vh;
+    text-align: center;
+  }
+
+  .btnContact{
+    margin-bottom: 20px;
+  }
+  .firstLine {
+    font-size: 60px;
+    margin-bottom: 28px;
+  }
+  .secondLine {
+    font-size: 25px;
+    margin-bottom: 8vh;
+  }
+  .InfoPosition>svg{
+    width: 75%;
+  }
+  .InfoPositionTechnoPref>svg{
+    width: 75%;
+    margin-bottom: -50px;
+  }
+  .footerDark{
+    margin-left: 1vh;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .main{
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0%;
+    left: 15%;
+    overflow: hidden;
+  }
+  .darkMain {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  body{
+    background-color: #1E1E1E;
+  }
+  .title{
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  containerAboutRight{
+    width: 10vh;
+    text-align: center;
+  }
+  .containerFastInfo{
+    padding-left: 0vh
+  }
+
+  .btnContact{
+    margin-bottom: 20px;
+  }
+  .firstLine {
+    font-size: 60px;
+    margin-bottom: 28px;
+  }
+  .secondLine {
+    font-size: 25px;
+    margin-bottom: 8vh;
+  }
+  .InfoPosition>svg{
+    width: 75%;
+  }
+  .InfoPositionTechnoPref>svg{
+    width: 75%;
+    margin-bottom: -50px;
+  }
 }
