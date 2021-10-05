@@ -15,7 +15,7 @@ function App(props: Props) {
     d.className = "clickEffectDark";
     d.style.top = e.clientY + "px"; d.style.left = e.clientX + "px";
     document.body.appendChild(d);
-    d.addEventListener('animationend', function () { d.parentElement!.removeChild(d); }.bind(e));
+    d.addEventListener('animationend', function () { d.parentElement!.removeChild(d);});
   }
   document.addEventListener('click', clickEffect);
   return (
@@ -31,5 +31,5 @@ const mapStateToProps = (state: any) => {
   }
 }
 
-export default connect(mapStateToProps, () => { })(App);
+export default connect(mapStateToProps)(App);
 

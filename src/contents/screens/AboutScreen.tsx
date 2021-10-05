@@ -71,16 +71,14 @@ const AboutScreen = (props: Props) => {
                 <span className={getColorAnime3()}>DEV WEB - DEV WEB - </span>
                 <span className={getColorAnime4()}>DEV WEB - DEV WEB - </span>
             </div>
-            <div className="main" >
-                <section className="containerAbout">
-                    <h1 className="title">Développeur web | Junior</h1>
-                    <article className="containerAboutRight">
-                        <p className="firstLine">Bo<span>n</span>jour,</p>
-                        <p className="secondLine">Je suis Hans Bherer</p>
-                        <Link className="btnContact" to="/contact">Contacter</Link>
-                    </article>
-                </section>
-            </div>
+            <section className="containerAbout main">
+                <h1 className="title">Développeur web | Junior</h1>
+                <article className="containerAboutRight">
+                    <p className="firstLine">Bo<span>n</span>jour,</p>
+                    <p className="secondLine">Je suis Hans Bherer</p>
+                    <Link className="btnContact" to="/contact">Contacter</Link>
+                </article>
+            </section>
             <section className="containerFastInfo">
                 <article className="navInfoPosition">
                     <div>Aptitude</div>
@@ -113,4 +111,4 @@ const mapStateToProps = (state: any) => {
     }
 }
 
-export default connect(mapStateToProps, () => { })(AboutScreen);
+export default connect(mapStateToProps)(AboutScreen);

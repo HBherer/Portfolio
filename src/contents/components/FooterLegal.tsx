@@ -79,4 +79,4 @@ const mapStateToProps = (state: any) => {
     }
 }
 
-export default connect(mapStateToProps, () => { })(FooterLegal);
+export default connect(mapStateToProps)(FooterLegal);

@@ -2,7 +2,6 @@
   display: flex;
   position: relative;
   z-index: 0;
-  overflow: hidden;
   flex-wrap: wrap;
 }
 
@@ -11,7 +10,6 @@
   color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .lightMain {
@@ -19,7 +17,6 @@
   color: #181818;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 /* About */
@@ -149,27 +146,27 @@
 
 @media screen and (max-width: 1855px) {
   .title{
-    width: 50vh;
+    width: 58vh;
   }
-  containerAboutRight{
+  .containerAboutRight{
     width: 55vh;
   }
 }
 @media screen and (max-width: 1707px) {
   .title{
-    width: 45vh;
+    width: 56vh;
   }
-  containerAboutRight{
-    width: 40vh;
+  .containerAboutRight{
+    width: 50vh;
   }
 }
 @media screen and (max-width: 1655px) {
   .title{
-    width: 35vh;
+    width: 55vh;
     font-size: 2rem;
   }
-  containerAboutRight{
-    width: 32vh;
+  .containerAboutRight{
+    width: 50vh;
   }
   .firstLine {
     font-size: 108px;
@@ -182,12 +179,15 @@
   }
 }
 @media screen and (max-width: 1550px) {
+  .main{
+    justify-content: space-around;
+  }
   .title{
-    width: 28vh;
+    width: 50vh;
     font-size: 1.7rem;
   }
-  containerAboutRight{
-    width: 20vh;
+  .containerAboutRight{
+    width: 50vh;
   }
   .firstLine {
     font-size: 88px;
@@ -205,22 +205,24 @@
 @media screen and (max-width: 1477px) {
   .main{
     justify-content: space-around;
-    width: 190vh;
+  }
+  .containerAbout {
+    justify-content: space-between;
   }
   .title{
-    width: 30vh;
-    font-size: 1.3rem;
+    width: 50vh;
+    font-size: 1.8rem;
   }
-  containerAboutRight{
-    width: 19vh;
+  .containerAboutRight{
+    width: 47vh;
   }
   .firstLine {
-    font-size: 70px;
+    font-size: 90px;
     margin-bottom: 28px;
   }
   .secondLine {
     margin-top: 0px;
-    font-size: 29px;
+    font-size: 38px;
     margin-bottom: 10vh;
   }
   .InfoPosition>svg{
@@ -234,14 +236,16 @@
 @media screen and (max-width: 1380px) {
   .main{
     justify-content: space-around;
-    width: 170vh;
+  }
+  .containerAbout {
+    justify-content: space-between;
   }
   .title{
-    width: 12vh;
-    font-size: 1.2rem;
+    width: 50%;
+    font-size: 1.6rem;
   }
-  containerAboutRight{
-    width: 5vh;
+  .containerAboutRight{
+    width: 30%;
   }
   .firstLine {
     font-size: 60px;
@@ -249,7 +253,7 @@
   }
   .secondLine {
     margin-top: 0px;
-    font-size: 25px;
+    font-size: 24px;
     margin-bottom: 10vh;
   }
   .InfoPosition>svg{
@@ -260,24 +264,62 @@
     margin-bottom: -50px;
   }
 }
+@media screen and (max-width: 1264px) {
+  .main{
+    justify-content: space-around;
+    width: 100vh;
+    height: 100vh;
+  }
+  .title{
+    width: 30vh;
+    font-size: 1.2rem;
+  }
+  .containerAboutRight{
+    width: 30vh;
+  }
+
+  .btnContact{
+    margin-bottom: 20px;
+  }
+  .firstLine {
+    font-size: 60px;
+    margin-bottom: 28px;
+  }
+  .secondLine {
+    font-size: 25px;
+    margin-bottom: 8vh;
+  }
+  .InfoPosition>svg{
+    width: 75%;
+  }
+  .InfoPositionTechnoPref>svg{
+    width: 75%;
+    margin-bottom: -50px;
+  }
+  .footerDark{
+    margin-left: 1vh;
+  }
+  .footerLight{
+    margin-left: 1vh;
+  }
+}
 @media screen and (max-width: 1144px) {
   .main{
     justify-content: space-around;
-    width: 175vh;
     height: 100vh;
-    position: absolute;
-    top: 0%;
-    overflow: hidden;
-  }
-  header{
-    position: absolute;
+    margin-left: 6vh;
   }
   .title{
-    width: 30vh;
-    font-size: 1.2rem;
+    width: 48%;
+    font-size: 1.4rem;
   }
-  containerAboutRight{
-    width: 10vh;
+  .containerAbout {
+    display: flex;
+    width: 70%;
+  }
+  .containerAboutRight{
+    width: 32%;
+    margin-left: 8%;
   }
 
   .btnContact{
@@ -301,126 +343,103 @@
   .footerDark{
     margin-left: 1vh;
   }
-}
-@media screen and (max-width: 1044px) {
-  .main{
-    justify-content: space-around;
-    width: 155vh;
-    height: 100vh;
-    position: absolute;
-    top: 0%;
-    overflow: hidden;
-  }
-  header{
-    position: absolute;
-  }
-  .title{
-    width: 30vh;
-    font-size: 1.2rem;
-  }
-  containerAboutRight{
-    width: 10vh;
-  }
-
-  .btnContact{
-    margin-bottom: 20px;
-  }
-  .firstLine {
-    font-size: 60px;
-    margin-bottom: 28px;
-  }
-  .secondLine {
-    font-size: 25px;
-    margin-bottom: 8vh;
-  }
-  .InfoPosition>svg{
-    width: 75%;
-  }
-  .InfoPositionTechnoPref>svg{
-    width: 75%;
-    margin-bottom: -50px;
-  }
-  .footerDark{
+  .footerLight{
     margin-left: 1vh;
   }
 }
-@media screen and (max-width: 950px) {
-  .main{
-    justify-content: space-around;
-    width: 90vh;
-    height: 100vh;
-    position: absolute;
-    top: 0%;
-    left: 15%;
-    overflow: hidden;
-  }
-  header{
-    position: absolute;
-  }
-  .title{
-    width: 50vh;
-    font-size: 1.2rem;
-  }
-  containerAboutRight{
-    width: 10vh;
-    text-align: center;
-  }
-
-  .btnContact{
-    margin-bottom: 20px;
-  }
-  .firstLine {
-    font-size: 60px;
-    margin-bottom: 28px;
-  }
-  .secondLine {
-    font-size: 25px;
-    margin-bottom: 8vh;
-  }
-  .InfoPosition>svg{
-    width: 75%;
-  }
-  .InfoPositionTechnoPref>svg{
-    width: 75%;
-    margin-bottom: -50px;
-  }
-  .footerDark{
-    margin-left: 1vh;
-  }
-}
-
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 1008px) {
   .main{
     justify-content: center;
-    width: 100%;
+    width: auto;
     height: 100vh;
     position: relative;
-    top: 0%;
-    left: 15%;
-    overflow: hidden;
+  }
+  .containerAbout {
+    width: 100%; 
+    flex-wrap: wrap-reverse;
+    margin: 8%;
+  }
+  .title{
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-left: 0vh;
+  }
+  .containerAboutRight{
+    width: 100%;
+    margin-left: 0vh;
+  }
+
+  .btnContact{
+    margin-bottom: 20px;
+  }
+  .firstLine {
+    font-size: 80px;
+    margin-bottom: 28px;
+  }
+  .secondLine {
+    font-size: 34px;
+    margin-bottom: 8vh;
+  }
+  .InfoPosition>svg{
+    width: 75%;
+  }
+  .InfoPositionTechnoPref>svg{
+    width: 75%;
+    margin-bottom: -50px;
+  }
+  .footerDark{
+    margin-left: 1vh;
+  }
+  .footerLight{
+    margin-left: 1vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main{
+    margin: 0px;
+  }
+  .containerAbout{
+    margin: 0px;
   }
   .darkMain {
     background-color: #1E1E1E;
     color: #FFFFFF;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: auto;
   }
-  body{
-    background-color: #1E1E1E;
+  .lightMain {
+    background-color: #F9F9F9;
+    color: #181818;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+  }
+  .main{
+    justify-content: center;
+    width: 100vh;
+    height: 100vh;
+    position: relative;
+    overflow: visible;
+  }
+  .containerAbout {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 100vh;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 0px;
   }
   .title{
     width: 100%;
     font-size: 1.1rem;
   }
-  containerAboutRight{
-    width: 10vh;
+  .containerAboutRight{
+    width: 100%;
     text-align: center;
   }
-  .containerFastInfo{
-    padding-left: 0vh
-  }
-
   .btnContact{
     margin-bottom: 20px;
   }
@@ -432,11 +451,36 @@
     font-size: 25px;
     margin-bottom: 8vh;
   }
+
+  .containerFastInfo{
+    width: 100%;
+    padding-left: 0vh;
+  }
+  .navInfoPosition {
+    justify-content: center;
+    margin-left: 0vh;
+    margin-bottom: 8%;
+  }
+  .navInfoPosition2 {
+    justify-content: center;
+    margin-left: 0vh;
+    margin-bottom: 8%;
+  }
+  .navInfoPosition2>div {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 1%;
+  }
   .InfoPosition>svg{
-    width: 75%;
+    width: 95%;
+    height: auto;
+    margin-left: 1%;
+    margin-bottom: 40%;
   }
   .InfoPositionTechnoPref>svg{
-    width: 75%;
-    margin-bottom: -50px;
+    width: 90%;
+    height: auto;
+    margin-left: 1%;
+    margin-bottom: 0px;
   }
 }

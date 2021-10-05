@@ -10,7 +10,7 @@ interface Props {
     theme: SupportedThemes
 }
 
-const Header = (props: Props) => {
+const HambergerMenu = (props: Props) => {
     const getColor = () => {
         if (props.theme === SupportedThemes.DARK) {
             return "darkHeader"
@@ -65,4 +65,4 @@ const mapStateToProps = (state: any) => {
     }
 }
 
-export default connect(mapStateToProps)(Header);
+export default connect(mapStateToProps)(HambergerMenu);
