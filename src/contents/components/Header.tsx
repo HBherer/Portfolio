@@ -5,12 +5,14 @@ import { getTheme } from "../../assets/theme/selector/themeSelector";
 import { SupportedThemes } from "../components/ThemeSelect";
 import "../../assets/sass/header.scss"
 import avatar from "../../assets/images/Tête_heureuxSVG.svg";
+import { useTranslation } from "react-i18next";
 
 interface Props {
     theme: SupportedThemes
 }
 
 const Header = (props: Props) => {
+    const { t } = useTranslation("general");
     const getColor = () => {
         if (props.theme === SupportedThemes.DARK) {
             return "darkHeader"
@@ -41,9 +43,9 @@ const Header = (props: Props) => {
                 <img className="avatarSize" src={avatar} alt="avatar"></img>
             </Link>
             <div>
-                <Link className={getColorLink()} to="/">À propos</Link>
-                <Link className={getColorLink()} to="/skills">Compétence</Link>
-                <Link className={getColorLink()} to="/projects">Réalisation</Link>
+                <Link className={getColorLink()} to="/">{t("about")}</Link>
+                <Link className={getColorLink()} to="/skills">{t("skill")}</Link>
+                <Link className={getColorLink()} to="/projects">{t("project")}</Link>
             </div>
             <div className="containerIconRS">
                 <a href="https://github.com/HBherer" target="_blank" rel="noreferrer">

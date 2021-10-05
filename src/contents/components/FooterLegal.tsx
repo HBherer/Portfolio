@@ -6,12 +6,14 @@ import ThemeSelect from "./ThemeSelect";
 import "../../assets/sass/footer.scss"
 import avatar from "../../assets/images/Tête_heureuxSVG.svg";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 interface Props {
     theme: SupportedThemes
 }
 
 const FooterLegal = (props: Props) => {
+    const { t } = useTranslation("general");
     const getColor = () => {
         if (props.theme === SupportedThemes.DARK) {
             return "footerDark"
@@ -37,27 +39,27 @@ const FooterLegal = (props: Props) => {
                     <p>Hans Bherer</p>
                 </article>
                 <article className="infoFooter">
-                    <h3>Contenu</h3>
+                    <h3>{t("content")}</h3>
                     <ul>
-                        <li className="li"><Link className={getLinkColor()} to="/">À Propos</Link></li>
-                        <li className="li"><Link className={getLinkColor()} to="/skills">Compétence</Link></li>
-                        <li className="li"><Link className={getLinkColor()} to="/projects">Réalisation</Link></li>
-                        <li className="li"><Link className={getLinkColor()} to="/contact">Contacter</Link></li>
+                        <li className="li"><Link className={getLinkColor()} to="/">{t("about")}</Link></li>
+                        <li className="li"><Link className={getLinkColor()} to="/skills">{t("skill")}</Link></li>
+                        <li className="li"><Link className={getLinkColor()} to="/projects">{t("project")}</Link></li>
+                        <li className="li"><Link className={getLinkColor()} to="/contact">{t("contact")}</Link></li>
                     </ul>
                 </article>
                 <article className="infoFooter">
-                    <h3>Réseaux sociaux</h3>
+                    <h3>{t("SM")}</h3>
                     <ul>
-                        <li className="li"><Link className={getLinkColor()} to="/">Linkedin</Link></li>
-                        <li className="li"><Link className={getLinkColor()} to="/skills">GitHub</Link></li>
-                        <li className="li"><Link className={getLinkColor()} to="/contact">GitLab</Link></li>
+                        <li className="li"><a className={getLinkColor()} target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hans-bherer-b566731b4/">Linkedin</a></li>
+                        <li className="li"><a className={getLinkColor()} target="_blank" rel="noreferrer" href="https://github.com/HBherer">GitHub</a></li>
+                        <li className="li"><a className={getLinkColor()} target="_blank" rel="noreferrer" href="https://gitlab.com/H.Bherer">GitLab</a></li>
                     </ul>
                 </article>
                 <article className="infoFooter">
-                    <h3>Référence</h3>
+                    <h3>{t("ref")}</h3>
                     <ul>
-                        <li className="li"><Link className={getLinkColor()} to="/">Flaticon</Link></li>
-                        <li className="li"><Link className={getLinkColor()} to="/skills">Icons8</Link></li>
+                        <li className="li"><a className={getLinkColor()} target="_blank" rel="noreferrer" href="https://www.flaticon.com/">Flaticon</a></li>
+                        <li className="li"><a className={getLinkColor()} target="_blank" rel="noreferrer" href="https://icons8.com/">Icons8</a></li>
                     </ul>
                 </article>
                 <article className="infoFooter">
@@ -66,8 +68,7 @@ const FooterLegal = (props: Props) => {
             </section>
 
             <section className="legal">
-                <p>Copyright © 2021 Hans Bherer Tous droits réservés.</p>
-                <section>Langue</section>
+                <p>{t("legal")}</p>
             </section>
         </footer>
     )

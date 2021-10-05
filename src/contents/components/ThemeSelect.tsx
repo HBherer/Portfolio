@@ -3,6 +3,7 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { toggleTheme } from "../../assets/theme/action/themeAction"
 import { getTheme } from "../../assets/theme/selector/themeSelector"
+import { useTranslation } from "react-i18next";
 
 export enum SupportedThemes {
     DARK = "DARK",
@@ -18,6 +19,7 @@ interface Props {
 }
 
 const ThemeSelect = (props: Props) => {
+    const { t } = useTranslation("general");
     const [theme, setTheme] = useState<SupportedThemes>(SupportedThemes.DARK)
 
     const handleChange = (event: any) => {
@@ -31,8 +33,8 @@ const ThemeSelect = (props: Props) => {
         <form>
             <label className="themeSelectLebel" htmlFor="themeSelect">Thème</label>
             <select id="themeSelect" name="themeSelect" value={theme} onChange={handleChange}>
-                <option value={SupportedThemes.DARK}>Sombre</option>
-                <option value={SupportedThemes.LIGHT}>Claire</option>
+                <option value={SupportedThemes.DARK}>{t("dark")}</option>
+                <option value={SupportedThemes.LIGHT}>{t("light")}</option>
             </select>
         </form>
     )

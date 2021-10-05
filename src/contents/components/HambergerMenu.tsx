@@ -5,6 +5,7 @@ import { getTheme } from "../../assets/theme/selector/themeSelector";
 import { SupportedThemes } from "../components/ThemeSelect";
 import "../../assets/sass/hambergerMenu.scss"
 import avatar from "../../assets/images/Tête_heureuxSVG.svg";
+import { useTranslation } from "react-i18next";
 
 
 interface Props {
@@ -12,6 +13,7 @@ interface Props {
 }
 
 const HambergerMenu = (props: Props) => {
+    const { t } = useTranslation("general");
     const [showMenu, setShowMenu] = useState(false)
     const HamMenu = () => {
         if (showMenu) {
@@ -21,9 +23,9 @@ const HambergerMenu = (props: Props) => {
                         <img onClick={() => setShowMenu(false)} className="avatarSizeHam" src={avatar} alt="avatar"></img>
                     </Link>
                     <div className="ContainerLinkHam">
-                        <Link onClick={() => setShowMenu(false)} className="LinkHamNav" to="/">À propos</Link>
-                        <Link onClick={() => setShowMenu(false)} className="LinkHamNav" to="/skills">Compétence</Link>
-                        <Link onClick={() => setShowMenu(false)} className="LinkHamNav" to="/projects">Réalisation</Link>
+                        <Link onClick={() => setShowMenu(false)} className="LinkHamNav" to="/">{t("about")}</Link>
+                        <Link onClick={() => setShowMenu(false)} className="LinkHamNav" to="/skills">{t("skill")}</Link>
+                        <Link onClick={() => setShowMenu(false)} className="LinkHamNav" to="/projects">{t("project")}</Link>
                     </div>
                     <div className="containerIconRSHamNav">
                         <a href="https://github.com/HBherer" target="_blank" rel="noreferrer">
