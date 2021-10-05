@@ -4,6 +4,7 @@ import { getTheme } from "../../assets/theme/selector/themeSelector";
 import { SupportedThemes } from "../components/ThemeSelect";
 import "../../assets/sass/App.scss"
 import Header from "../components/Header";
+import HambergerMenu from "../components/HambergerMenu";
 import FooterLegal from '../components/FooterLegal';
 import "../../assets/sass/animation.scss";
 import { Link } from "react-router-dom";
@@ -64,6 +65,7 @@ const AboutScreen = (props: Props) => {
     };
     return (
         <div className={getColor()}>
+            <HambergerMenu />
             <Header />
             <div className="wrapperAnim">
                 <span className={getColorAnime1()}>DEV WEB - DEV WEB - </span>
