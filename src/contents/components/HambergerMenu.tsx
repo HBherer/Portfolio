@@ -7,7 +7,6 @@ import "../../assets/sass/hambergerMenu.scss"
 import avatar from "../../assets/images/Tête_heureuxSVG.svg";
 import { useTranslation } from "react-i18next";
 
-
 interface Props {
     theme: SupportedThemes
 }
@@ -44,7 +43,6 @@ const HambergerMenu = (props: Props) => {
         <>
             <span className="hamMenu">
                 <img onClick={() => setShowMenu(!showMenu)} className="hamMenu" src="https://img.icons8.com/ios-filled/60/606C38/menu--v2.png" alt="Hamberger Menu" />
-
             </span>
             {HamMenu()}
         </>

@@ -7,7 +7,6 @@ import Header from "../components/Header";
 import HambergerMenu from "../components/HambergerMenu";
 import FooterLegal from '../components/FooterLegal';
 import "../../assets/sass/animation.scss";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 

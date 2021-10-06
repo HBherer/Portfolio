@@ -127,7 +127,7 @@ const SkillsScreen = (props: Props) => {
                     <img className="iconDev" src={Ngnix} alt="icons Ngnix" />
                     <img className="iconDev resizeIcon" src={Apache} alt="icons Apache" />
                 </article>
-            </section> 
+            </section>
             <FooterLegal />
         </div>
 
