@@ -39,9 +39,9 @@ const Header = (props: Props) => {
     }
     return (
         <header className={getColor()}>
-            <Link className="containerAvatarSize" to="/contact">
+            <a className="containerAvatarSize" href="mailto:1hansbherer@gmail.com">
                 <img className="avatarSize" src={avatar} alt="avatar"></img>
-            </Link>
+            </a>
             <div>
                 <Link className={getColorLink()} to="/">{t("about")}</Link>
                 <Link className={getColorLink()} to="/skills">{t("skill")}</Link>

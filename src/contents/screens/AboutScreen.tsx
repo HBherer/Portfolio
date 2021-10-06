@@ -80,7 +80,7 @@ const AboutScreen = (props: Props) => {
                 <article className="containerAboutRight">
                     <p className="firstLine">{t("salutation1")}<span>{t("salutation2")}</span>{t("salutation3")}</p>
                     <p className="secondLine">{t("presentation")}</p>
-                    <Link className="btnContact" to="/contact">{t("contact")}</Link>
+                    <a className="btnContact" href="mailto:1hansbherer@gmail.com">{t("contact")}</a>
                 </article>
             </section>
             <section className="containerFastInfo">
@@ -105,7 +105,6 @@ const AboutScreen = (props: Props) => {
             </section>
             <FooterLegal />
         </div>
-
     )
 }
 

@@ -1,3 +1,9 @@
+@import url("https://use.typekit.net/jkn4iyh.css");
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'darkmode-off', sans-serif;
+}
 .main {
   display: flex;
   position: relative;
@@ -222,6 +228,37 @@
   &:active{
     color: #181818;
   }
+}
+
+/* Contact */
+
+.ContainerContact{
+  margin-top: 8vh;
+  margin-left: 8vh;
+  margin-bottom: 8%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.CardContactDark{
+  background-color: #181818;
+  border-radius: 8px;
+  padding: 5px 20px 20px 30px;
+  box-shadow: 6px 6px 12px 2px #00000075;
+  display: flex;
+  flex-wrap: wrap;
+  width: 40vh;
+  margin: 20px;
+}
+.CardContactLight{
+  background-color: #F9F9F9;
+  border-radius: 8px;
+  padding: 5px 20px 20px 30px;
+  box-shadow: 6px 6px 12px 2px #00000075;
+  display: flex;
+  flex-wrap: wrap;
+  width: 40vh;
+  margin: 20px;
 }
 
 /* MEDIA QUERY */

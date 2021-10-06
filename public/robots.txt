@@ -1,3 +1,32 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+User-Agent: Googlebot-Image
+Disallow: /
+
+User-Agent: Googlebot
+Allow: /
+
+User-Agent: MSNBot
+Allow: /
+
+User-Agent: Slurp
+Allow: /
+
+User-Agent: Lycos
+Allow: /
+
+User-Agent: Seekbot
+Allow: /
+
+User-Agent: Sistrix
+Allow: /
+
+User-Agent: SearchmetricsBot
+Allow: /
+
+User-Agent: BacklinkCrawler
+Allow: /
+
+User-Agent: SEOkicks-Robot
+Allow: /
+
+User-Agent: xovi
+Allow: /

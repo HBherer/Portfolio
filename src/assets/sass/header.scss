@@ -71,7 +71,7 @@ header {
     outline: none;
 
     &:hover,
-    :active {
+    :active, :visited, :focus {
         color: #606C38;
         border-left: solid 6px #606C38;
     }
@@ -88,16 +88,8 @@ header {
     border-left: solid 6px transparent;
     transition: color 0.3s;
     outline: none;
-
-    &:hover,
-    :active {
-        color: #606C38;
-        border-left: solid 6px #606C38;
-    }
-
     border-left: solid 6px transparent;
-
-    &:hover {
+    &:hover, :active, :visited, :focus {
         color: #606C38;
         border-left: solid 6px #606C38;
     }

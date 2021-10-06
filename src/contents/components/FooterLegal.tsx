@@ -44,7 +44,7 @@ const FooterLegal = (props: Props) => {
                         <li className="li"><Link className={getLinkColor()} to="/">{t("about")}</Link></li>
                         <li className="li"><Link className={getLinkColor()} to="/skills">{t("skill")}</Link></li>
                         <li className="li"><Link className={getLinkColor()} to="/projects">{t("project")}</Link></li>
-                        <li className="li"><Link className={getLinkColor()} to="/contact">{t("contact")}</Link></li>
+                        <li className="li"><a className={getLinkColor()} href="mailto:1hansbherer@gmail.com">{t("contact")}</a></li>
                     </ul>
                 </article>
                 <article className="infoFooter">

@@ -19,9 +19,9 @@ const HambergerMenu = (props: Props) => {
         if (showMenu) {
             return (
                 <div className="BgNavMenu">
-                    <Link className="containerAvatarSize" to="/">
+                    <a className="containerAvatarSize" href="mailto:1hansbherer@gmail.com">
                         <img onClick={() => setShowMenu(false)} className="avatarSizeHam" src={avatar} alt="avatar"></img>
-                    </Link>
+                    </a>
                     <div className="ContainerLinkHam">
                         <Link onClick={() => setShowMenu(false)} className="LinkHamNav" to="/">{t("about")}</Link>
                         <Link onClick={() => setShowMenu(false)} className="LinkHamNav" to="/skills">{t("skill")}</Link>
