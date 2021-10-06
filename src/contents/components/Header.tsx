@@ -39,7 +39,7 @@ const Header = (props: Props) => {
     }
     return (
         <header className={getColor()}>
-            <Link className="containerAvatarSize" to="/">
+            <Link className="containerAvatarSize" to="/contact">
                 <img className="avatarSize" src={avatar} alt="avatar"></img>
             </Link>
             <div>

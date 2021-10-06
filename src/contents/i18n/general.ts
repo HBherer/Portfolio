@@ -20,6 +20,18 @@ const translations = {
         theme: "Thème",
         legal: "Copyright © 2021 Hans Bherer Tous droits réservés.",
 
+        langProg: "Langages programmation",
+        front: "Front-end",
+        back: "Back-end",
+        DB: "Base de données",
+        devOps: "DevOps",
+        adobe: "Adobe CC",
+        cms: "CMS",
+        deployment: "Déploiement",
+
+        technoUsed: "Conception",
+        LinkRepo: "Voir project",
+
         dark: "Sombre",
         light: "Claire",
       },
@@ -44,6 +56,18 @@ const translations = {
         ref: "Reference",
         theme: "Theme",
         legal: "Copyright © 2021 Hans Bherer All rights reserved.",
+
+        langProg: "Programming languages",
+        front: "Front-end",
+        back: "Back-end",
+        DB: "Data Base",
+        devOps: "DevOps",
+        adobe: "Adobe CC",
+        cms: "CMS",
+        deployment: "Deployment",
+
+        technoUsed: "Conception",
+        LinkRepo: "See project",
 
         dark: "Dark",
         light: "Light",

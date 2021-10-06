@@ -142,6 +142,88 @@
   width: 100%
 }
 
+/* Skill */
+
+.containerSkills{
+  margin-top: 10vh;
+  margin-left: 13.34vh;
+  margin-bottom: 8%;
+  width: 100vh;
+}
+
+.iconDev{
+  width: 12%;
+  margin: 10px;
+}
+.resizeIcon{
+  width: 6.2%;
+}
+
+/* Project */
+
+.ContainerAllProject{
+  margin-top: 8vh;
+  margin-left: 8vh;
+  margin-bottom: 8%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.CardProjectDark{
+  background-color: #181818;
+  border-radius: 8px;
+  padding: 5px 20px 20px 30px;
+  box-shadow: 6px 6px 12px 2px #00000075;
+  display: flex;
+  flex-wrap: wrap;
+  width: 40vh;
+  margin: 20px;
+}
+.CardProjectLight{
+  background-color: #F9F9F9;
+  border-radius: 8px;
+  padding: 5px 20px 20px 30px;
+  box-shadow: 6px 6px 12px 2px #00000075;
+  display: flex;
+  flex-wrap: wrap;
+  width: 40vh;
+  margin: 20px;
+}
+.subTitleProject{
+  width: 100%;
+}
+.projectImgSize{
+  width: 100%;
+}
+
+.containerIconsProject{
+  width: 52%;
+}
+.iconProdjectSize{
+  width: 20%;
+  margin-right: 8px;
+}
+.upHBS{
+  margin-bottom: 14px;
+}
+.btnRedirectRepo{
+  text-decoration: none;
+  border: solid 1px #606C38;
+  background-color: #606C38;
+  border-radius: 8px;
+  align-self: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  &:hover{
+    background-color: #767e5d;
+  }
+  &:active{
+    color: #181818;
+  }
+}
+
 /* MEDIA QUERY */
 
 @media screen and (max-width: 1855px) {
@@ -388,6 +470,26 @@
     width: 75%;
     margin-bottom: -50px;
   }
+
+  .containerSkills{
+    margin: 15vh 1% 8% 8%;
+    width: 100vh;
+  }
+
+  .ContainerAllProject{
+    margin: 15vh 1% 8% 5%;
+    width: 90%;
+  }
+  .CardProject > div{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .btnRedirectRepo{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+  }
+
   .footerDark{
     margin-left: 1vh;
   }
