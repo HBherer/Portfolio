@@ -1,5 +1,5 @@
 # Hans Bherer | Portfolio
-Voici mon portfolio concu avec **React.Js** en **TypeScript**
+Voici mon portfolio conçu avec **React.Js** en **TypeScript**
 
 [Lien vers Portfolio](https://www.hbherer.me)
 
