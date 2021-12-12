@@ -88,7 +88,7 @@ const ProjectsScreen = (props: Props) => {
                         <img className="iconProdjectSize" src={Php} alt="Php" />
                         <img className="iconProdjectSize" src={Sass} alt="Sass" />
                     </div>
-                    <a className="btnRedirectRepo" href="https://github.com/zwgagne/foodshare-laravel" target="_blank" rel="noreferrer">{t("LinkRepo")}</a>
+                    <a className="btnRedirectRepo" href="https://github.com/HBherer/FoodShare" target="_blank" rel="noreferrer">{t("LinkRepo")}</a>
                 </article>
                 <article className={getColorBgCard()}>
                     <h3 className="subTitleProject">ForceMajeure</h3>

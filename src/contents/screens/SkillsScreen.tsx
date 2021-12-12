@@ -23,6 +23,7 @@ import Css3 from "../../assets/images/inconsDev/front-end/icons8-css3-100.svg";
 import Jquery from "../../assets/images/inconsDev/front-end/jquery-vertical.svg";
 import Gsap from "../../assets/images/inconsDev/front-end/gsap-greensock.svg";
 import Handlebars from "../../assets/images/inconsDev/front-end/handlebarsjs_logo.svg";
+import styledComponents from "../../assets/images/inconsDev/front-end/styled_components.svg";
 
 import Node from "../../assets/images/inconsDev/back-end/nodejs-icon.svg";
 import Ex from "../../assets/images/inconsDev/back-end/expressjs-icon.svg";
@@ -30,6 +31,7 @@ import Laravel from "../../assets/images/inconsDev/back-end/laraval_logo.svg";
 import Npm from "../../assets/images/inconsDev/back-end/npmjs-icon.svg";
 import Postman from "../../assets/images/inconsDev/back-end/getpostman-icon.svg";
 
+import PostgreSQL from "../../assets/images/inconsDev/database/Postgresql_elephant.svg";
 import MongoDB from "../../assets/images/inconsDev/database/mongodb-icon.svg";
 import MySQL from "../../assets/images/inconsDev/database/icons8-mysql-logo-100.svg";
 
@@ -80,6 +82,7 @@ const SkillsScreen = (props: Props) => {
                     <img className="iconDev" src={ReactImg} alt="icons React" />
                     <img className="iconDev" src={Vue} alt="icons Vue" />
                     <img className="iconDev" src={Sass} alt="icons Sass" />
+                    <img className="iconDev" src={styledComponents} alt="icons styled-Components" />
                     <img className="iconDev resizeIcon" src={Gulp} alt="icons Gulp" />
                     <img className="iconDev" src={Bootstrap} alt="icons Bootstrap" />
                     <img className="iconDev" src={Materialize} alt="icons Materialize" />
@@ -99,6 +102,7 @@ const SkillsScreen = (props: Props) => {
                 </article>
                 <h2 className="subTitle">{t("DB")}</h2>
                 <article>
+                    <img className="iconDev" src={PostgreSQL} alt="icons PostgreSQL" />
                     <img className="iconDev" src={MongoDB} alt="icons MongoDB" />
                     <img className="iconDev" src={MySQL} alt="icons MySQL" />
                 </article>
